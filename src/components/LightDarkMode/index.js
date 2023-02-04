@@ -14,11 +14,11 @@ class LightDarkMode extends Component {
     const {onLight} = this.state
     const lightName = onLight ? 'Light Mode' : 'Dark Mode'
     const themeName = onLight ? 'Dark-Mode' : 'Light-Mode'
-    const headingName = onLight ? 'heading-Dark' : 'heading-Light'
+    
     return (
       <div className="light-container">
         <div className={`card-light-container ${themeName}`}>
-          <h1 className={`heading ${headingName}`}>Click To Change Mode</h1>
+          <h1 className="heading">Click To Change Mode</h1>
           <button
             className="button-Mode"
             type="button"
